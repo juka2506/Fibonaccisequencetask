@@ -17,5 +17,25 @@ public class Main {
         double fibOnPosition = (Math.pow(phi, position) - Math.pow((-phi), (-position))) / (Math.sqrt(5));
 
         System.out.println(position + "th Fibonacci number is " + (int) fibOnPosition);
+
+        /*
+        // Alternative solution
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the upper limit: ");
+        int upperLimit = scanner.nextInt();
+
+        int firstNumber = 1;
+        int secondNumber = 1;
+        int currentNumber = 0;
+
+        for (int i = 2; i < upperLimit; i++) {
+            currentNumber = firstNumber + secondNumber;
+            firstNumber = secondNumber;
+            secondNumber = currentNumber;
+
+        }
+        System.out.println("The cumbe of the fibonacci sequence at " + upperLimit + " is " + currentNumber);
+    */
     }
+
 }
